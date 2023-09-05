@@ -1,0 +1,17 @@
+.landing {
+  height: calc(100vh - 100px);
+}
+
+.moving-image {
+  animation: moveImage 3s linear infinite;
+}
+
+@keyframes moveImage {
+  0%,
+  100% {
+    margin-top: 10px;
+  }
+  50% {
+    margin-top: -10px;
+  }
+}
