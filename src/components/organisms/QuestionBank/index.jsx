@@ -10,18 +10,11 @@ function QuestionBank() {
     <section className="container max-w-screen-xl">
       <QuestionHeader title={title} description={description} />
       {topics.map((topic) => (
-        <>
-          <QuestionAccordion
-            key={topic.id}
-            heading={topic.heading}
-            questions={topic.questions}
-          />
-          <QuestionAccordion
-            key={topic.id}
-            heading={topic.heading}
-            questions={topic.questions}
-          />
-        </>
+        <QuestionAccordion
+          key={topic.id}
+          heading={topic.heading}
+          questions={topic.questions}
+        />
       ))}
     </section>
   );
